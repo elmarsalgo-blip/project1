@@ -1,0 +1,138 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Uses a standard Minecraft background color or dirt-like theme */
+    background-color: #2c2c2c;
+    /* Repeating dirt texture alternative using pure CSS gradients */
+    background-image: 
+        linear-gradient(45deg, #1c1c1c 25%, transparent 25%), 
+        linear-gradient(-45deg, #1c1c1c 25%, transparent 25%), 
+        linear-gradient(45deg, transparent 75%, #1c1c1c 75%), 
+        linear-gradient(-45deg, transparent 75%, #1c1c1c 75%);
+    background-size: 40px 40px;
+    background-position: 0 0, 0 20px, 20px -20px, -20px 0;
+    
+    font-family: 'Press Start 2P', monospace;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main Layout Container */
+.mc-container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Header Styling */
+.mc-header h1 {
+    font-size: 2.5rem;
+    color: #f7a81b;
+    text-shadow: 4px 4px 0px #372203;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.mc-header p {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 0px #000;
+}
+
+/* In-game Menu Container style */
+.mc-menu {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 4px solid #373737;
+    outline: 4px solid #000000;
+    box-shadow: inset -4px -4px 0px #555555, inset 4px 4px 0px #222222;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+/* Text Content Card */
+.mc-card {
+    background: #4a4a4a;
+    border: 4px solid #282828;
+    box-shadow: inset -4px -4px 0px #1a1a1a, inset 4px 4px 0px #707070;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.mc-card h2 {
+    font-size: 1rem;
+    color: #55ff55; /* Minecraft green text code */
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 0px #000;
+}
+
+.mc-card p {
+    font-size: 0.75rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+    text-shadow: 2px 2px 0px #000;
+}
+
+/* Classic Minecraft Button Layout */
+.mc-button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* The standard Gray Button */
+.mc-btn {
+    display: block;
+    text-decoration: none;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    background-color: #9e9e9e;
+    padding: 16px;
+    text-align: center;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+
+    /* Pixelated borders */
+    border: 4px solid #000;
+    box-shadow: inset -4px -4px 0px #5e5e5e, inset 4px 4px 0px #dbdbdb;
+    text-shadow: 2px 2px 0px #373737;
+}
+
+/* Button Hover State (Turns green/highlighted like in-game) */
+.mc-btn:hover {
+    background-color: #7ca85c;
+    color: #fffbba;
+    box-shadow: inset -4px -4px 0px #4d6b35, inset 4px 4px 0px #a4d682;
+    text-shadow: 2px 2px 0px #2a3d1c;
+}
+
+/* Button Active/Click State */
+.mc-btn:active {
+    box-shadow: inset 4px 4px 0px #4d6b35, inset -4px -4px 0px #a4d682;
+}
+
+/* Stone Variant Button */
+.mc-btn-stone {
+    background-color: #707070;
+    box-shadow: inset -4px -4px 0px #4a4a4a, inset 4px 4px 0px #a1a1a1;
+    text-shadow: 2px 2px 0px #212121;
+}
+
+.mc-btn-stone:hover {
+    background-color: #8c8c8c;
+    color: #ffffff;
+    box-shadow: inset -4px -4px 0px #5c5c5c, inset 4px 4px 0px #c2c2c2;
+    text-shadow: 2px 2px 0px #3a3a3a;
+}
