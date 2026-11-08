@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,10 +6,7 @@
 }
 
 body {
-    /* Uses a standard Minecraft background color or dirt-like theme */
     background-color: #2c2c2c;
-    /* Repeating dirt texture alternative using pure CSS gradients */
-    background-image: 
         linear-gradient(45deg, #1c1c1c 25%, transparent 25%), 
         linear-gradient(-45deg, #1c1c1c 25%, transparent 25%), 
         linear-gradient(45deg, transparent 75%, #1c1c1c 75%), 
@@ -26,14 +23,12 @@ body {
     padding: 20px;
 }
 
-/* Main Layout Container */
 .mc-container {
     width: 100%;
     max-width: 600px;
     text-align: center;
 }
 
-/* Header Styling */
 .mc-header h1 {
     font-size: 2.5rem;
     color: #f7a81b;
@@ -49,7 +44,6 @@ body {
     text-shadow: 2px 2px 0px #000;
 }
 
-/* In-game Menu Container style */
 .mc-menu {
     background-color: rgba(0, 0, 0, 0.8);
     border: 4px solid #373737;
@@ -59,7 +53,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Text Content Card */
 .mc-card {
     background: #4a4a4a;
     border: 4px solid #282828;
@@ -82,15 +75,12 @@ body {
     color: #e0e0e0;
     text-shadow: 2px 2px 0px #000;
 }
-
-/* Classic Minecraft Button Layout */
 .mc-button-container {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-/* The standard Gray Button */
 .mc-btn {
     display: block;
     text-decoration: none;
@@ -104,13 +94,11 @@ body {
     user-select: none;
     cursor: pointer;
 
-    /* Pixelated borders */
     border: 4px solid #000;
     box-shadow: inset -4px -4px 0px #5e5e5e, inset 4px 4px 0px #dbdbdb;
     text-shadow: 2px 2px 0px #373737;
 }
 
-/* Button Hover State (Turns green/highlighted like in-game) */
 .mc-btn:hover {
     background-color: #7ca85c;
     color: #fffbba;
@@ -118,12 +106,10 @@ body {
     text-shadow: 2px 2px 0px #2a3d1c;
 }
 
-/* Button Active/Click State */
 .mc-btn:active {
     box-shadow: inset 4px 4px 0px #4d6b35, inset -4px -4px 0px #a4d682;
 }
 
-/* Stone Variant Button */
 .mc-btn-stone {
     background-color: #707070;
     box-shadow: inset -4px -4px 0px #4a4a4a, inset 4px 4px 0px #a1a1a1;
